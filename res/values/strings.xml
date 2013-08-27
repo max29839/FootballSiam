@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FootballSiam</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="label_next">ถัดไป</string>
+    <string name="label_Previous">กลับ</string>
+    <string name="lable_back">กลับไปหน้าหลัก</string>
+
+</resources>

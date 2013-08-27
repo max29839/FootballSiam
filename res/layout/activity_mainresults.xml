@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android1:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_im"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android1:orientation="vertical"
+    tools:context=".MainActivityresults" >
+
+    <TextView
+        android1:id="@+id/textView1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_gravity="center_horizontal"
+        android1:layout_marginBottom="@dimen/activity_vertical_margin"
+        android1:text="ผลบอลล่าสุด"
+        android1:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <LinearLayout
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <Button
+            android1:id="@+id/button1_1"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="1"
+            android1:text="@string/label_Previous" />
+
+        <Button
+            android1:id="@+id/button2_2"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:layout_weight="1"
+            android1:text="@string/label_next" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android1:id="@+id/viewFlipper1"
+        android1:layout_width="match_parent"
+        android1:layout_height="wrap_content" >
+
+        <LinearLayout
+            android1:id="@+id/main_Layout_page_1"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/main_page_1_image_View"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/ic_1" />
+
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/main_Layout_page_2"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/main_page_2_image_View"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/ic_2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/main_Layout_page_3"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/main_page_3_image_View"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/ic_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android1:id="@+id/main_Layout_page_4"
+            android1:layout_width="match_parent"
+            android1:layout_height="match_parent"
+            android1:orientation="vertical" >
+
+            <ImageView
+                android1:id="@+id/main_page_4_image_View"
+                android1:layout_width="wrap_content"
+                android1:layout_height="wrap_content"
+                android1:src="@drawable/ic_4" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <Button
+        android1:id="@+id/button1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_gravity="right"
+        android1:text="กลับไปหน้าหลัก"
+        android1:onClick="backButton" />
+
+</LinearLayout>
